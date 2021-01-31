@@ -3,5 +3,20 @@ html {
 }
 
 h1 {
-    color: #393e46;
+    color: white;
+    text-align: right;
+}
+
+h2 {
+    color: #eeeeee;
+    text-align: center;
+}
+
+h3 {
+    color: #eeeeee;
+}
+
+form {
+    color: #eeeeee;
+    text-align: center;
 }
