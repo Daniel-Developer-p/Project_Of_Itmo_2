@@ -1,9 +1,10 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Привествуем Вас!</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style>
 
         .topnav {
@@ -37,12 +38,20 @@
 </head>
 <body>
 
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
         <a class="class">Film WebSite</a>
+        <p class="card-text">
+            {{ article.body }}
+        </p>
     </div>
 
     <h2>Привет! Ты человек!</h2>
@@ -60,7 +69,6 @@
 
         <h3><input type="submit" value="Проголосовать" /></h3>
     </form>
-
 
 </body>
 </html>
